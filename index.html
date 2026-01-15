@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/styles.css" rel="stylesheet">
+
+  <title>Anurag Karki | Portfolio</title>
+  <meta name="description" content="Portfolio of Anurag Karki — mechanical engineering, design & simulation, UAVs, and applied AI." />
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-glass sticky-top navbar-dark" data-bs-theme="dark">
+  <div class="container py-2">
+    <a class="navbar-brand text-white text-decoration-none" href="index.html">
+      <span class="brand-badge"><span class="brand-dot"></span> Anurag Karki</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="Gallery.html">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="essays.html">Writing</a></li>
+        <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<header class="hero">
+  <div class="container">
+    <div class="hero-card position-relative">
+      <div class="hero-inner">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="kbd-chip">Mechanical Engineering</span>
+              <span class="kbd-chip">Design & Simulation</span>
+              <span class="kbd-chip">UAV / Robotics</span>
+              <span class="kbd-chip">Applied AI</span>
+            </div>
+            <h1 class="display-5 mb-2">Creativity in motion — solving hard problems with engineering.</h1>
+            <p class="subtitle mb-4">Transforming real-world constraints into clear, creative, and reliable solutions—through prototyping, simulation, and AI-powered tools that carry ideas from concept to practical systems.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-gradient btn-lg" href="Anurag_Karki_CV.pdf" download>Download CV</a>
+              <a class="btn btn-ghost btn-lg" href="#work">View projects</a>
+            </div>
+            <div class="mt-3">
+              <small class="muted">Tip: use the filters to quickly jump to what you care about (CFD, UAV, AI, etc.).</small>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-surface p-3">
+  <video autoplay muted loop playsinline controls preload="metadata"
+         style="width:100%; height:clamp(180px,24vw,280px); border-radius:16px; object-fit:cover; display:block;">
+    <source src="last.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+          </div>
+        </div>
+      </div><!-- /hero-inner -->
+    </div><!-- /hero-card -->
+  </div>
+</header>
+
+<main class="section" id="work">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-end justify-content-between gap-3 mb-3">
+      <div>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">A selection of work — click through for details, media, and writeups.</p>
+      </div>
+    </div>
+
+    <div class="filter-bar" data-filter-bar>
+      <button class="filter-btn" type="button" data-filter="all">All</button>
+      <button class="filter-btn" type="button" data-filter="cfd">CFD</button>
+      <button class="filter-btn" type="button" data-filter="uav">UAV</button>
+      <button class="filter-btn" type="button" data-filter="ai">AI</button>
+      <button class="filter-btn" type="button" data-filter="optimization">Optimization</button>
+      <button class="filter-btn" type="button" data-filter="embedded">Embedded</button>
+      <button class="filter-btn" type="button" data-filter="fabrication">Fabrication</button>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- BWB -->
+      <div class="col-md-6 col-lg-4" data-tags="cfd,optimization,uav">
+        <div class="card-surface project-card">
+          <img src="bwb.png" class="project-media" alt="BWB UAV">
+          <div class="project-body">
+            <div class="mb-2">
+              <span class="tag">CFD</span><span class="tag">Optimization</span><span class="tag">UAV</span>
+            </div>
+            <div class="project-title">BWB-UAV Optimization</div>
+            <div class="project-text">Blended Wing Body UAV design optimization using Aeolus and SU2.</div>
+            <a href="bwb.html" class="btn btn-ghost">See details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- In-situ DAQ -->
+      <div class="col-md-6 col-lg-4" data-tags="uav,embedded">
+        <div class="card-surface project-card">
+          <img src="data.png" class="project-media" alt="In-situ Data Acquisition">
+          <div class="project-body">
+            <div class="mb-2">
+              <span class="tag">UAV</span><span class="tag">Embedded</span>
+            </div>
+            <div class="project-title">Flight In-Situ Data Acquisition</div>
+            <div class="project-text">Arduino-based data acquisition for temperature/humidity and flight conditions.</div>
+            <a href="insitu.html" class="btn btn-ghost">See details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- GA research PDF -->
+      <div class="col-md-6 col-lg-4" data-tags="optimization,uav,research">
+        <div class="card-surface project-card">
+          <img src="ga.png" class="project-media" alt="Genetic Algorithm Research">
+          <div class="project-body">
+            <div class="mb-2">
+              <span class="tag">Optimization</span><span class="tag">UAV</span><span class="tag">Research</span>
+            </div>
+            <div class="project-title">GA for UAV Wildlife Monitoring</div>
+            <div class="project-text">Genetic Algorithm-based persistent surveillance planning in probability-guided wildlife environments.</div>
+            <a href="Gallery.html" class="btn btn-ghost">Open research PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Snow Leopard video -->
+      <div class="col-md-6 col-lg-4" data-tags="ai,uav">
+        <div class="card-surface project-card">
+
+          <div class="p-3">
+            <!-- Keep the full frame visible (no cropping) -->
+            <div style="width:100%; aspect-ratio:16/9; border-radius:16px; overflow:hidden; background:#000;">
+              <video autoplay muted loop playsinline controls preload="metadata"
+                     style="width:100%; height:100%; object-fit:contain; display:block;">
+                <source src="snow.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="mb-2">
+              <span class="tag">AI</span><span class="tag">UAV</span>
+            </div>
+            <div class="project-title">Snow Leopard Detection</div>
+            <div class="project-text"> 
+              Integrated the detector with a PX4 SITL + Gazebo pipeline (QGroundControl for mission control) to stream frames, overlay bounding boxes, and log detections for later analysis.
+            </div>
+            <a href="https://youtu.be/Dey3QArN3rI?si=hFQ-KibwGXsPXutS" target="_blank" class="btn btn-ghost">Watch demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nozzle -->
+      <div class="col-md-6 col-lg-4" data-tags="cfd,optimization">
+        <div class="card-surface project-card">
+          <img src="noz.png" class="project-media" alt="Convergent-divergent nozzle">
+          <div class="project-body">
+            <div class="mb-2">
+              <span class="tag">CFD</span><span class="tag">Optimization</span>
+            </div>
+            <div class="project-title">Shape Optimization of CD Nozzle</div>
+            <div class="project-text">CFD-based iterative optimization in SU2 to maximize thrust and improve supersonic performance.</div>
+            <a href="index.html#work" class="btn btn-ghost">Listed project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Long endurance UAV -->
+      <div class="col-md-6 col-lg-4" data-tags="uav,fabrication">
+        <div class="card-surface project-card">
+          <img src="uav.jpg" class="project-media" alt="Long endurance UAV">
+          <div class="project-body">
+            <div class="mb-2">
+              <span class="tag">UAV</span><span class="tag">Fabrication</span>
+            </div>
+            <div class="project-title">Design & Fabrication of Long Endurance UAV</div>
+            <div class="project-text">Iterative CAD design with 3D-printed / laser-cut components and hands-on fabrication.</div>
+            <a href="index.html#work" class="btn btn-ghost">Listed project</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+    <div>&copy; 2025 Anurag Karki. All rights reserved.</div>
+    <div class="text-white-50">Built with Bootstrap</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
